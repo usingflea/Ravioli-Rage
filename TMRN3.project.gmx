@@ -18,12 +18,14 @@
     <sprite>sprites\sprite_player_move</sprite>
     <sprite>sprites\sprite_wall</sprite>
     <sprite>sprites\sprite_player</sprite>
+    <sprite>sprites\spr_playerLives</sprite>
     <sprite>sprites\sprite_jump</sprite>
     <sprite>sprites\spike</sprite>
     <sprite>sprites\sprite_ledge</sprite>
     <sprite>sprites\sprite8</sprite>
     <sprite>sprites\sprite_thing</sprite>
     <sprite>sprites\out</sprite>
+    <sprite>sprites\sprite9</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -54,6 +56,7 @@
     <object>objects\room3</object>
     <object>objects\lives</object>
     <object>objects\object15</object>
+    <object>objects\obj_GameManager</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start</room>
