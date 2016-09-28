@@ -29,8 +29,7 @@
 menu[1] = "Level 2";
 menu[2] = "Level 3";
 menu[3] = "Level 4";
-menu[4] = "Test Chamber";
-menu[5] = "Quit";
+menu[4] = "Quit";
 
 space = 64;
 mpos = 0;
