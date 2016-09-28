@@ -22,11 +22,6 @@ switch (mpos)
         break;
     }
     case 4:
-    {   
-        room_goto(Fausto_Test_Chamber);
-        break;
-    }
-    case 5:
     { 
         game_end(); break;
     }
