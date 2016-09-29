@@ -8,6 +8,7 @@
     <sound>sound\startscreen</sound>
     <sound>sound\level1</sound>
     <sound>sound\level2</sound>
+    <sound>sound\aud_go</sound>
     <sound>sound\level3</sound>
     <sound>sound\aud_pickup</sound>
     <sound>sound\aud_jump</sound>
@@ -26,8 +27,10 @@
     <sprite>sprites\sprite_thing</sprite>
     <sprite>sprites\out</sprite>
     <sprite>sprites\sprite9</sprite>
-    <sprite>sprites\spr_topCannon</sprite>
+    <sprite>sprites\spr_TopCannon</sprite>
     <sprite>sprites\spr_Shuriken</sprite>
+    <sprite>sprites\spr_LeftCannon</sprite>
+    <sprite>sprites\spr_RightCannon</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -61,8 +64,11 @@
     <object>objects\obj_GameManager</object>
     <object>objects\obj_TopCannon</object>
     <object>objects\obj_Shuriken</object>
+    <object>objects\obj_LeftCannon</object>
+    <object>objects\obj_RightCannon</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Fausto_Test_Chamber</room>
     <room>rooms\Start</room>
     <room>rooms\Menu</room>
     <room>rooms\roomw</room>
