@@ -202,6 +202,8 @@
     <instance objName="lives" x="96" y="128" name="inst_A3EEDC0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="lives" x="128" y="128" name="inst_6EB3CC78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TopCannon" x="160" y="448" name="inst_BF1ED84F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_RightCannon" x="32" y="480" name="inst_182F197E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_RightCannon" x="64" y="448" name="inst_F6D709A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
