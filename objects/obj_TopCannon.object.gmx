@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>delay_const = 50;
+            <string>delay_const = 100;
 delay = delay_const;
 </string>
           </argument>

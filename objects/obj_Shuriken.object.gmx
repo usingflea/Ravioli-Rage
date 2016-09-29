@@ -71,7 +71,7 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="2">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -88,13 +88,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (life_time &lt;= 0)
-{
+            <string>if (place_meeting(self.x,self.y,obj_wall))
+{   
     instance_destroy();
 }
-else
-{
-    life_time -= 1;
+if (place_meeting(self.x,self.y,obj_spike))
+{   
+    instance_destroy();
+}
+if (place_meeting(self.x,self.y,object5))
+{   
+    instance_destroy();
 }
 </string>
           </argument>
