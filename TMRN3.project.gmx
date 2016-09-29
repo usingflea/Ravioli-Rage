@@ -29,6 +29,8 @@
     <sprite>sprites\sprite9</sprite>
     <sprite>sprites\spr_TopCannon</sprite>
     <sprite>sprites\spr_Shuriken</sprite>
+    <sprite>sprites\spr_LeftCannon</sprite>
+    <sprite>sprites\spr_RightCannon</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -62,6 +64,8 @@
     <object>objects\obj_GameManager</object>
     <object>objects\obj_TopCannon</object>
     <object>objects\obj_Shuriken</object>
+    <object>objects\obj_LeftCannon</object>
+    <object>objects\obj_RightCannon</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Fausto_Test_Chamber</room>
