@@ -31,6 +31,7 @@
     <sprite>sprites\spr_Shuriken</sprite>
     <sprite>sprites\spr_LeftCannon</sprite>
     <sprite>sprites\spr_RightCannon</sprite>
+    <sprite>sprites\spr_ledge</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -40,6 +41,8 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_menu.gml</script>
+    <script>scripts\scr_move_state.gml</script>
+    <script>scripts\ledge_grab.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font0</font>
@@ -68,6 +71,7 @@
     <object>objects\obj_RightCannon</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Fausto_Test_Chamber</room>
     <room>rooms\Start</room>
     <room>rooms\Menu</room>
     <room>rooms\roomw</room>
@@ -76,7 +80,6 @@
     <room>rooms\Level_2</room>
     <room>rooms\Level_3</room>
     <room>rooms\Level_4</room>
-    <room>rooms\Fausto_Test_Chamber</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

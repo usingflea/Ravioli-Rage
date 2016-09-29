@@ -34,7 +34,8 @@ movespeed = 4;
 jumps = 0;
 jumpsmax = 2;
 sco = 0;
-
+state = scr_move_state;
+hsp_dir = 1;
 </string>
           </argument>
         </arguments>
@@ -137,75 +138,8 @@ sco = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Get the player's input
-key_right = keyboard_check(vk_right);
-key_left = -keyboard_check(vk_left);
-key_jump = keyboard_check_pressed(vk_space);
-key_jump_held = keyboard_check(vk_space);
-
-//React to inputs
-move = key_left + key_right;
-hsp = move * movespeed;
-if (vsp &lt; 10) vsp += grav;
-
-if (place_meeting(x,y+1,obj_wall))
-{
-    jumps = jumpsmax;
-}
-
-if (key_jump) &amp;&amp; (jumps &gt; 0)
-{
-    audio_play_sound(aud_jump,10,false);    
-    jumps -= 1;
-    vsp = -jumpspeed;
-}
-
-if (vsp &lt; 0) &amp;&amp; (!key_jump_held) vsp = max( vsp, -jumpspeed/4)
-
-//Triple Jump cancelado!
-//if (key_jump) &amp;&amp; (place_meeting(x+1,y,object5) || place_meeting(x-1,y,object5))
-//{
-//    vsp = -jumpspeed;
-//    jumpsmax = 3;
-//}
-
-
-//Horizontal Collision
-if (place_meeting(x+hsp,y,obj_wall))
-{
-    while(!place_meeting(x+sign(hsp),y,obj_wall))
-    {
-        x += sign(hsp);
-    }
-    hsp = 0;
-}
-x += hsp;
-
-//Vertical Collision
-if (place_meeting(x,y+vsp,obj_wall))
-{
-    while(!place_meeting(x,y+sign(vsp),obj_wall))
-    {
-        y += sign(vsp);
-    }
-    vsp = 0;
-}
-y += vsp;
-
-//Animate
-if (move != 0) image_xscale = move;
-if (place_meeting(x,y+1,obj_wall))
-{
-    if (move!=0) sprite_index = sprite_player_move; else sprite_index = sprite_player;
-}
- else
- {
-    if(vsp &lt; 0) sprite_index = sprite_jump; else sprite_index = sprite_jump;
- }
-
-image_speed=0.1;
-
-
+            <string>///Execute player state scr
+script_execute(state)
 </string>
           </argument>
         </arguments>
