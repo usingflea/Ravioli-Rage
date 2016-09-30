@@ -80,7 +80,7 @@ if (was_free && is_not_free && moving_down)
        //Make sure the height is right
        while(position_meeting(x+(17*hsp_dir), y-14, obj_wall)) 
        {
-        y-=1;
+        y-=0.9;
        }
        state = ledge_grab;
     }  
