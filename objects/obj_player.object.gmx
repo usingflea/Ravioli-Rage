@@ -35,6 +35,8 @@ jumps = 0;
 jumpsmax = 2;
 sco = 0;
 
+//Gamepad
+gamepad_set_axis_deadzone(0, 0.5);
 </string>
           </argument>
         </arguments>
@@ -138,13 +140,21 @@ sco = 0;
           <argument>
             <kind>1</kind>
             <string>//Get the player's input
-key_right = keyboard_check(vk_right);
-key_left = -keyboard_check(vk_left);
-key_jump = keyboard_check_pressed(vk_space);
-key_jump_held = keyboard_check(vk_space);
+key_right = keyboard_check(vk_right);// || gamepad_axis_value(0, gp_axislh);
+key_left = -keyboard_check(vk_left);// || gamepad_axis_value(0, gp_axislh);
+key_jump = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1);
+key_jump_held = keyboard_check(vk_space) || gamepad_button_check(0, gp_face1);
 
 //React to inputs
-move = key_left + key_right;
+if (gamepad_is_connected(0))
+{
+    move = gamepad_axis_value(0, gp_axislh);
+    if(move &lt;= 1 &amp;&amp; move &gt; 0) {move = 1;} else if(move &gt;= -1 &amp;&amp; move &lt; 0){move = -1;}
+}
+else{
+    move = key_left + key_right;
+    }
+    
 hsp = move * movespeed;
 if (vsp &lt; 10) vsp += grav;
 
@@ -204,6 +214,8 @@ if (place_meeting(x,y+1,obj_wall))
 
 image_speed=0.1;
 
+//score
+score = sco
 
 </string>
           </argument>
@@ -421,10 +433,10 @@ image_speed=0.1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_set_halign(fa_left);
-draw_set_valign(fa_middle);
-draw_set_font(font0);
-draw_set_color(c_white);
+            <string>//draw_set_halign(fa_left);
+//draw_set_valign(fa_middle);
+//draw_set_font(font0);
+//draw_set_color(c_white);
 sco = sco + 1;
 
 if (sco = 7) 
