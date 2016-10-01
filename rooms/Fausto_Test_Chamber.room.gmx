@@ -197,8 +197,8 @@
     <instance objName="gameover" x="32" y="128" name="inst_4AA1398F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_GameManager" x="64" y="128" name="inst_839A71F6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="object15" x="96" y="128" name="inst_96326DCD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="lives" x="96" y="128" name="inst_A3EEDC0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="lives" x="128" y="128" name="inst_6EB3CC78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lives" x="96" y="128" name="inst_A3EEDC0D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_lives" x="128" y="128" name="inst_6EB3CC78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_TopCannon" x="288" y="416" name="inst_BF1ED84F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_RightCannon" x="256" y="512" name="inst_182F197E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_RightCannon" x="320" y="512" name="inst_F6D709A5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

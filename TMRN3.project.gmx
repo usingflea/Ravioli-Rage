@@ -59,10 +59,10 @@
     <object>objects\out_of_bounds</object>
     <object>objects\gameover</object>
     <object>objects\Enter</object>
-    <object>objects\room</object>
+    <object>objects\obj_room</object>
     <object>objects\room2</object>
     <object>objects\room3</object>
-    <object>objects\lives</object>
+    <object>objects\obj_lives</object>
     <object>objects\object15</object>
     <object>objects\obj_GameManager</object>
     <object>objects\obj_TopCannon</object>
