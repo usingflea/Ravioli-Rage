@@ -72,6 +72,7 @@ if (was_free && is_not_free && moving_down)
        hsp = 0;
        vsp = 0;
        
+       
        //move against the ledge
        while(!place_meeting(x+hsp_dir, y, obj_wall))
        {
