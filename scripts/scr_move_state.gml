@@ -2,12 +2,29 @@
 //Get the player's input
 key_right = keyboard_check(vk_right);
 key_left = -keyboard_check(vk_left);
-key_jump = keyboard_check_pressed(vk_space);
-key_jump_held = keyboard_check(vk_space);
+key_jump = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1);
+key_jump_held = keyboard_check(vk_space) || gamepad_button_check(0, gp_face1);
 
 //React to inputs
-move = key_left + key_right;
-hsp = move * movespeed;
+if (gamepad_is_connected(0))
+{
+    move = gamepad_axis_value(0, gp_axislh);
+    if(move < 0 && move > -1)
+    {
+        move = -1;
+    }
+    else if(move > 0 && move < 1)
+    {
+        move = 1;
+    }
+    //show_message(string(move));
+}else
+{
+    move = key_left + key_right;
+}
+
+hsp = (move * movespeed) + hsp_carry;
+hsp_carry = 0;
 if (vsp < 10) vsp += grav;
 
 if (place_meeting(x,y+1,obj_wall))

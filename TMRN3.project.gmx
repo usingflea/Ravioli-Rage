@@ -14,6 +14,7 @@
     <sound>sound\aud_jump</sound>
     <sound>sound\aud_hurt</sound>
     <sound>sound\win</sound>
+    <sound>sound\snd_1up</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite_player_move</sprite>
@@ -32,6 +33,8 @@
     <sprite>sprites\spr_LeftCannon</sprite>
     <sprite>sprites\spr_RightCannon</sprite>
     <sprite>sprites\spr_ledge</sprite>
+    <sprite>sprites\spr_MovingPlatform</sprite>
+    <sprite>sprites\spr_Rice</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -69,6 +72,8 @@
     <object>objects\obj_Shuriken</object>
     <object>objects\obj_LeftCannon</object>
     <object>objects\obj_RightCannon</object>
+    <object>objects\obj_MovingPlatform</object>
+    <object>objects\obj_Rice</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Start</room>

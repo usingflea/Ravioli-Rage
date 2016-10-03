@@ -34,6 +34,9 @@ menu[5] = "Quit";
 
 space = 64;
 mpos = 0;
+
+//Gamepad
+gamepad_set_axis_deadzone(0, 0.5);
 </string>
           </argument>
         </arguments>

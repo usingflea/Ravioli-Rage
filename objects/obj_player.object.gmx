@@ -36,6 +36,12 @@ jumpsmax = 2;
 sco = 0;
 state = scr_move_state;
 hsp_dir = 1;
+
+//Movement Platform speed.
+hsp_carry = 0;
+
+//Gamepad
+gamepad_set_axis_deadzone(0, 0.5);
 </string>
           </argument>
         </arguments>
