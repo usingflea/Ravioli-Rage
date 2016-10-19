@@ -76,6 +76,7 @@
     <object>objects\obj_Rice</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Fausto_Test_Chamber</room>
     <room>rooms\Start</room>
     <room>rooms\Menu</room>
     <room>rooms\roomw</room>
@@ -84,7 +85,6 @@
     <room>rooms\Level_2</room>
     <room>rooms\Level_3</room>
     <room>rooms\Level_4</room>
-    <room>rooms\Fausto_Test_Chamber</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

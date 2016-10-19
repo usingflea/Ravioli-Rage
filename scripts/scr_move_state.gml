@@ -17,7 +17,6 @@ if (gamepad_is_connected(0))
     {
         move = 1;
     }
-    //show_message(string(move));
 }else
 {
     move = key_left + key_right;
